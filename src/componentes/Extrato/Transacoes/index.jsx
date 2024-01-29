@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Transacoes({ transacao, estilos }) {
+function Transacoes({ transacao, estilos }) {
   return (
     <li>
       <p className={estilos.mes}>{transacao.mes}</p>
@@ -23,3 +23,4 @@ export default function Transacoes({ transacao, estilos }) {
     </li>
   );
 }
+export default Transacoes;

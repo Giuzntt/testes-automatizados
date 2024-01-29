@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import estilos from './Formulario.module.css';
 
-export default function Formulario({ realizarTransacao }) {
+function Formulario({ realizarTransacao }) {
   const [valor, setValor] = useState({ transacao: '', valor: '' });
 
   function handleChange(e) {
@@ -57,3 +57,5 @@ export default function Formulario({ realizarTransacao }) {
     </form>
   );
 }
+
+export default Formulario;

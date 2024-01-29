@@ -2,7 +2,7 @@ import React from 'react';
 import estilos from './Extrato.module.css';
 import Transacoes from './Transacoes';
 
-export default function Extrato({ transacoes }) {
+function Extrato({ transacoes }) {
   return (
     <section className={estilos.container}>
       <h2 className={estilos.titulo}>Extrato</h2>
@@ -16,3 +16,5 @@ export default function Extrato({ transacoes }) {
     </section>
   );
 }
+
+export default Extrato;
